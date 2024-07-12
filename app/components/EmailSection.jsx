@@ -18,6 +18,7 @@ const EmailSection = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          e.target.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
